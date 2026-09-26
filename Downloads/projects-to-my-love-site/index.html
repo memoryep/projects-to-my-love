@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#050002">
+  <title>For You ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main id="app">
+    <section id="intro" class="screen active">
+      <div class="intro-wrap">
+        <div class="tiny-heart">♡</div>
+        <h1>Eu fiz uma coisa especial para você.</h1>
+        <button id="openBtn" type="button">Abrir</button>
+      </div>
+    </section>
+
+    <section id="show" class="screen">
+      <canvas id="canvas"></canvas>
+      <div id="counter"></div>
+    </section>
+
+    <section id="ending" class="screen">
+      <div class="ending-wrap">
+        <div class="final-heart">♡</div>
+        <h2>I love you.</h2>
+        <div class="red-heart">♥</div>
+        <button id="surpriseBtn" type="button">uma surpresa ♡</button>
+      </div>
+    </section>
+
+    <section id="memories">
+      <header class="memories-header">
+        <div class="memory-heart">♡</div>
+        <h2>Nossas Memórias</h2>
+        <p>um pedacinho de nós</p>
+        <h6>(são as fotos da minha pasta de favoritos)</h6>
+        <div class="scroll-hint">↓</div>
+      </header>
+      <div id="clothesline" class="clothesline"></div>
+      <footer class="memories-end">
+        <div class="memory-heart">♡</div>
+        <h2>E muitas outras<br>para descobrir.</h2>
+        <p>Eu te amo.</p>
+      </footer>
+    </section>
+
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <button id="closeLightbox" class="close-lightbox" type="button">×</button>
+      <div id="lightboxContent" class="lightbox-content"></div>
+      <div id="lightboxDate" class="lightbox-date"></div>
+    </div>
+  </main>
+  <audio id="memoryMusic" loop preload="auto">
+    <source src="music/bem.mp3" type="audio/mpeg">
+  </audio>
+  <script src="script.js"></script>
+</body>
+
+</html>
